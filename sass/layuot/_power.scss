@@ -1,37 +1,54 @@
-.adv-text::before {
-  content: "";
-  display: block;
+// .adv-text::before {
+//   content: "";
+//   display: block;
+//   background-color: #f5f4fa;
+//   width: 270px;
+//   height: 120px;
+//   left: 515px;
+//   top: 774px;
+//   border-radius: 4px;
+// }
+
+// .antena::before {
+//   content: "";
+//   background-image: url(../images/advantages/antena.png);
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
+// .clock::before {
+//   content: "";
+//   background-image: url(../images/advantages/clock.png);
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
+// .diagram::before {
+//   content: "";
+//   background-image: url(../images/advantages/diagram.png);
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
+// .astronaut::before {
+//   content: "";
+//   background-image: url(../images/advantages/astronaut.png);
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
+.advantages-icon-bg {
+  display: flex;
   background-color: #f5f4fa;
   width: 270px;
   height: 120px;
   left: 515px;
   top: 774px;
   border-radius: 4px;
+
+  align-items: center;
+  justify-content: center;
 }
 
-.antena::before {
-  content: "";
-  background-image: url(../images/advantages/antena.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.clock::before {
-  content: "";
-  background-image: url(../images/advantages/clock.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.diagram::before {
-  content: "";
-  background-image: url(../images/advantages/diagram.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.astronaut::before {
-  content: "";
-  background-image: url(../images/advantages/astronaut.png);
-  background-repeat: no-repeat;
-  background-position: center;
+.advantages-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .advantages-padding {
@@ -39,9 +56,11 @@
 }
 .adv .list {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
-
+.adv-text:not(:last-child) {
+  margin-right: 30px;
+}
 .power-title {
   margin-top: 30px;
   font-weight: 700;

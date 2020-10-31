@@ -34,5 +34,8 @@
 }
 .img-we-do {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+}
+.img-us:not(:last-child) {
+  margin-right: 30px;
 }
