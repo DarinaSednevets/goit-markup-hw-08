@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $main-font;
+  font-style: normal;
+}
+img {
+  display: block;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  font-style: normal;
+}
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container-for-all {
+  width: 1600px;
+  margin: 0 auto;
+}
+a:focus {
+  outline: none;
+}
+button:focus {
+  outline: none;
+}

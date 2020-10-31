@@ -1,0 +1,17 @@
+//utils
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/backdrop";
+
+//base
+@import "./base/common";
+
+//components
+@import "./components/portfolio-active";
+@import "./components/portfolio-filter";
+@import "./components/modal-form";
+
+//layout
+@import "./layuot/header";
+@import "./layuot/portfolio-preview";
+@import "./layuot/footer";

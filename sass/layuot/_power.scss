@@ -1,0 +1,62 @@
+.adv-text::before {
+  content: "";
+  display: block;
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  left: 515px;
+  top: 774px;
+  border-radius: 4px;
+}
+
+.antena::before {
+  content: "";
+  background-image: url(../images/advantages/antena.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.clock::before {
+  content: "";
+  background-image: url(../images/advantages/clock.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.diagram::before {
+  content: "";
+  background-image: url(../images/advantages/diagram.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.astronaut::before {
+  content: "";
+  background-image: url(../images/advantages/astronaut.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages-padding {
+  padding-top: 94px;
+}
+.adv .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.power-title {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-text-color;
+}
+.power-subtitle {
+  width: 270px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
+}

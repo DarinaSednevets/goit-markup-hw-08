@@ -1,0 +1,38 @@
+.img-us {
+  position: relative;
+}
+.we-do-text {
+  position: absolute;
+  bottom: 0px;
+  padding: 27px 0 27px;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.about-us-padding {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.what-we-do {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+}
+.img-we-do {
+  display: flex;
+  justify-content: space-between;
+}

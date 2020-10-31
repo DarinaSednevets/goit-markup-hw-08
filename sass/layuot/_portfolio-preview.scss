@@ -1,0 +1,74 @@
+.portfolio-div {
+  position: relative;
+  overflow: hidden;
+}
+.short-text {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 322px;
+  height: 168px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.556;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translate(0, 0);
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: (0.4, 0, 0.2, 1);
+  transform: translateY(100%);
+
+  .item-portfolio:hover & {
+    transform: translateY(0%);
+  }
+}
+
+.portfolio-preview {
+  padding-bottom: 94px;
+}
+.preview-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.text-portfolio {
+  padding: 20px 24px;
+  background: #ffffff;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: #eeeeee;
+}
+.project-name {
+  margin-bottom: 4px;
+}
+.item-portfolio {
+  margin-bottom: 30px;
+  width: 370px;
+  height: 404px;
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.preview-list .project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $main-text-color;
+}
+.project-type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
