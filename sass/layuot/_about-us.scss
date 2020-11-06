@@ -1,3 +1,9 @@
+@media screen and (max-width: 1199px) {
+  .about-us {
+    display: none;
+  }
+}
+
 .img-us {
   position: relative;
 }
@@ -19,7 +25,6 @@
 }
 
 .about-us-padding {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
