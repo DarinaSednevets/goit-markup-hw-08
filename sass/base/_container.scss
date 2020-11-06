@@ -1,0 +1,58 @@
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  // outline: 2px solid blue;
+}
+// @media screen and (min-width: 480px) {
+//   .container {
+//     width: 480px;
+//     position: relative;
+//   }
+//   .container-hero {
+//     text-align: center;
+//     width: 480px;
+//     margin: 0 auto;
+//     padding: 0;
+//     outline: 1px solid rebeccapurple;
+//   }
+// }
+@media screen and (max-width: 767px) {
+  .container {
+    width: 480px;
+    position: relative;
+  }
+  .container-hero {
+    text-align: center;
+    width: 480px;
+    margin: 0 auto;
+    padding: 0;
+    // outline: 1px solid rebeccapurple;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    // outline: 2px solid red;
+  }
+  .container-hero {
+    text-align: center;
+    width: 768px;
+    margin: 0 auto;
+    // outline: 1px solid rebeccapurple;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    // outline: 2px solid yellowgreen;
+  }
+  .container-hero {
+    text-align: center;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    // outline: 1px solid rebeccapurple;
+  }
+}

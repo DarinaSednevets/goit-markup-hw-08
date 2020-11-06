@@ -56,17 +56,6 @@ img {
   font-style: normal;
 }
 
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.container-for-all {
-  width: 1600px;
-  margin: 0 auto;
-}
-
 a:focus {
   outline: none;
 }
@@ -75,15 +64,46 @@ button:focus {
   outline: none;
 }
 
-.portfolio::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1px;
-  width: 78px;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 480px;
+    position: relative;
+  }
+  .container-hero {
+    text-align: center;
+    width: 480px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .container-hero {
+    text-align: center;
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .container-hero {
+    text-align: center;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
 }
 
 .portfolio-filter .container {
@@ -335,46 +355,68 @@ button:focus {
   height: 15px;
 }
 
+.menu-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+.menu-btn:focus > svg {
+  fill: #2196f3;
+}
+
+.menu-btn .icon-close-menu {
+  display: none;
+}
+
+.menu-btn.is-open .icon-close-menu {
+  display: block;
+}
+
+.menu-btn.is-open .icon-menu {
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .logo-div {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .header-box {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo-div {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-div {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  .header .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.header .contacts {
-  display: flex;
-  margin-left: auto;
-}
-
-.header .contacts .mail {
-  margin-right: 30px;
-}
-
-.header-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
-  color: #212121;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.logo {
-  margin-right: 93px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -385,81 +427,6 @@ button:focus {
 
 .logo-web {
   color: #2196f3;
-}
-
-.navigation-list-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.navigation-list-item {
-  font-style: 400;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-  color: #212121;
-}
-
-.header-contacts > svg {
-  margin-right: 10px;
-  fill: #757575;
-}
-
-.listnav {
-  display: flex;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-  position: relative;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.contacts {
-  display: flex;
-}
-
-.header-link {
-  transition-property: all;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link:hover, .header-link:focus {
-  color: #2196f3;
-}
-
-.header-contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
-  color: #757575;
-  transition-property: all;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-contacts:hover, .header-contacts:focus, .header-contacts:active {
-  color: #2196f3;
-}
-
-.header-contacts > svg {
-  fill: #757575;
-  transition-property: all;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-contacts:hover > svg {
-  fill: #2196f3;
-}
-
-.header .tel,
-.header .mail {
-  display: flex;
-  align-items: center;
 }
 
 .portfolio-div {
