@@ -97,7 +97,6 @@ button:focus {
   .container {
     width: 1200px;
     margin: 0 auto;
-    outline: 2px solid yellowgreen;
   }
   .container-hero {
     text-align: center;
@@ -397,12 +396,97 @@ button:focus {
   .header-box {
     display: none;
   }
+  .logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+  .logo-web {
+    color: #2196f3;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo-div {
     padding-top: 26px;
     padding-bottom: 26px;
+    margin-right: 88px;
+  }
+  .header-box {
+    display: flex;
+    align-items: center;
+  }
+  .listnav {
+    display: flex;
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 84px;
+  }
+  .logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+  .logo-web {
+    color: #2196f3;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  .navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .navigation-list-item {
+    font-style: 400;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+  .header-contacts > svg {
+    margin-right: 8px;
+    fill: #757575;
+  }
+  .header-contacts {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-contacts:hover, .header-contacts:focus, .header-contacts:active {
+    color: #2196f3;
+  }
+  .header-contacts > svg {
+    fill: #757575;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-contacts:hover > svg {
+    fill: #2196f3;
+  }
+  .header .tel,
+  .header .mail {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -415,19 +499,91 @@ button:focus {
     display: flex;
     align-items: center;
   }
-}
-
-.logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  color: #000000;
-}
-
-.logo-web {
-  color: #2196f3;
+  .logo-div {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
+  }
+  .header-box {
+    display: flex;
+    align-items: center;
+  }
+  .listnav {
+    display: flex;
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 84px;
+  }
+  .logo {
+    margin-right: 93px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+  .logo-web {
+    color: #2196f3;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  .navigation-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .navigation-list-item {
+    font-style: 400;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+  .contacts {
+    display: flex;
+  }
+  .header-contacts > svg {
+    margin-right: 10px;
+    fill: #757575;
+  }
+  .header-contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-contacts:hover, .header-contacts:focus, .header-contacts:active {
+    color: #2196f3;
+  }
+  .contacts-item:not(:last-child) {
+    margin-right: 28px;
+  }
+  .header-contacts > svg {
+    fill: #757575;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-contacts:hover > svg {
+    fill: #2196f3;
+  }
+  .header .tel,
+  .header .mail {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .portfolio-div {
