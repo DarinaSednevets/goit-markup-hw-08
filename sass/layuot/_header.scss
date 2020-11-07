@@ -143,25 +143,20 @@
   .outline {
     border-bottom: 1px solid #ececec;
   }
-  .logo-div {
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
   .header .container {
     display: flex;
     align-items: center;
   }
   .logo-div {
-    padding-top: 26px;
-    padding-bottom: 26px;
-    margin-right: 88px;
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
   .header-box {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .listnav {
-    display: flex;
     display: flex;
     font-weight: 500;
     font-size: 14px;
@@ -170,7 +165,8 @@
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
-    margin-right: 84px;
+
+    margin-right: 307px;
   }
   .logo {
     margin-right: 93px;
@@ -185,6 +181,7 @@
       color: $web-word-color;
     }
   }
+
   .header {
     display: flex;
     align-items: center;
@@ -204,6 +201,7 @@
   .contacts {
     display: flex;
   }
+
   .header-contacts > svg {
     margin-right: 10px;
     fill: #757575;
