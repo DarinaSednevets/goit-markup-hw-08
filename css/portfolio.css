@@ -410,6 +410,9 @@ button:focus {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .outline {
+    border-bottom: 1px solid #ececec;
+  }
   .logo-div {
     padding-top: 26px;
     padding-bottom: 26px;
@@ -491,6 +494,9 @@ button:focus {
 }
 
 @media screen and (min-width: 1200px) {
+  .outline {
+    border-bottom: 1px solid #ececec;
+  }
   .logo-div {
     padding-top: 24px;
     padding-bottom: 25px;
