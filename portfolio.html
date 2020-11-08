@@ -70,8 +70,9 @@
 
     <!--Section portfolio-->
     <main>
+      <div class="container">
       <section class="portfolio-filter">
-        <div class="container">
+
           <h2 hidden>Фильтры</h2>
           <ul class="filter-items list">
             <li class="filter-li">
@@ -90,8 +91,10 @@
               <button class="filter" type="button">Маркетинг</button>
             </li>
           </ul>
-        </div>
+        
       </section>
+      </div>
+
       <section class="portfolio-preview">
         <div class="container">
           <h1 hidden>Примеры работ</h1>
@@ -285,68 +288,83 @@
     </main>
 
     <!--Footer-Сontacts-->
-    <footer class="footer">
-      <section class="footer-section footer-padding">
-        <div class="container help">
-          <div class="footer-first">
-            <h2 hidden>Контакты</h2>
-            <div class="footer-logo-margin">
-              <a class="link footer-logo" href="index.html" aria-label="логотип веб студии" lang="en"><span
-                  class="footerlogo-web">Web</span>Studio</a>
+    <div class="footer">
+      <footer class="container  ">
+        <section class="footer-section footer-padding">
+    
+          <div class="help">
+    
+            <div class="footer-first">
+              <div class="tablet-adres">
+                <h2 hidden>Контакты</h2>
+                <div class="footer-logo-margin">
+                  <a class="link footer-logo" href="index.html" aria-label="логотип веб студии" lang="en"><span
+                      class="footerlogo-web">Web</span>Studio</a>
+                </div>
+    
+                <div>
+                  <address>
+                    <ul class="list footer-adres-list">
+                      <li class="address-margin">
+                        <a class="link street" href="https://goo.gl/maps/fiabQLBE6Hv75SHZ6" target="blank"><span
+                            class="stereet">г. Киев, пр-т Леси Украинки, 26</span></a>
+                      </li>
+                      <li class="adress-margin">
+                        <a class="footer-links link" href="mailto:info@example.com">info@example.com</a>
+                      </li>
+                      <li class="adress-margin">
+                        <a class="footer-links link" href="tel:+380991111111">+38 099 111 11 11</a>
+                      </li>
+                    </ul>
+                  </address>
+                </div>
+              </div>
             </div>
-            <address>
-              <ul class="list">
-                <li class="address-margin">
-                  <a class="link street" href="https://goo.gl/maps/fiabQLBE6Hv75SHZ6" target="blank"><span
-                      class="stereet">г. Киев, пр-т Леси Украинки, 26</span></a>
+    
+            <div class="footer-social-links">
+              <p>присоединяйтесь</p>
+              <ul class="goin-social-links list">
+                <li class="social-link-item">
+                  <a class="footer-social-link link" href="" aria-label="instagram">
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="adress-margin">
-                  <a class="footer-links link" href="mailto:info@example.com">info@example.com</a>
+                <li class="social-link-item">
+                  <a class="footer-social-link link" href="" aria-label="twitter">
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="adress-margin">
-                  <a class="footer-links link" href="tel:+380991111111">+38 099 111 11 11</a>
+                <li class="social-link-item">
+                  <a class="footer-social-link link" href="" aria-label="facebook">
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-link-item">
+                  <a class="footer-social-link link" href="" aria-label="linkedin">
+                    <svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
+            </div>
           </div>
-          <div class="footer-social-links">
-            <p>присоединяйтесь</p>
-            <ul class="goin-social-links list">
-              <li class="social-link-item">
-                <a class="footer-social-link link" href="" aria-label="instagram">
-                  <svg width="20" height="20">
-                    <use href="./images/sprite.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-link-item">
-                <a class="footer-social-link link" href="" aria-label="twitter">
-                  <svg width="20" height="20">
-                    <use href="./images/sprite.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-link-item">
-                <a class="footer-social-link link" href="" aria-label="facebook">
-                  <svg width="20" height="20">
-                    <use href="./images/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-link-item">
-                <a class="footer-social-link link" href="" aria-label="linkedin">
-                  <svg width="20" height="20">
-                    <use href="./images/sprite.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-form">
     
-            <h2 class="footer-form-title">Подпишитесь на рассылку</h2>
-            <div class="form-input-btn">
-              <input type="email" name="user-e" class="footer-input" placeholder="E-mail">
+    
+          <div class="footer-form">
+            <div class="big-form">
+              <div>
+                <h2 class="footer-form-title">Подпишитесь на рассылку</h2>
+                <div class="form-input-btn">
+                </div>
+                <input type="email" name="user-e" class="footer-input" placeholder="E-mail">
+              </div>
               <div class="btn-icon">
                 <button type="submit" class="footer-btn">Подписаться
                   <svg width="24px" height="24px" class="icon-send">
@@ -355,8 +373,10 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </footer>
+    
+    
+        </section>
+      </footer>
+    </div>
   </body>
 </html>
