@@ -26,6 +26,9 @@
   .menu-btn.is-open .icon-menu {
     display: none;
   }
+  .icon-menu:active .menu-container {
+    display: block;
+  }
 }
 @media screen and (max-width: 767px) {
   .address-wrapper {
