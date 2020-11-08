@@ -1,10 +1,14 @@
-@media screen and (min-width: 320px) and (max-width: 1999px) {
+// было
+// @media screen and (min-width: 320px) and (max-width: 1999px)
+// стало
+
+@media screen and (max-width: 1999px) {
   .advantages-padding {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .advantages-icon-bg {
     display: flex;
     background-color: #f5f4fa;

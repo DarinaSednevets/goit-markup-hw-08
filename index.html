@@ -17,7 +17,7 @@
   <body>
     <!--Header--> 
     <div class="outline">
-      <div class="container">
+      <div class=" container container-header-phone">
         <header class="header">
           <div class="logo-div">
           <a
@@ -44,7 +44,7 @@
               </use>
             </svg>
           </button>
-          <!-- <div class="menu-container">Меню</div> -->
+          <div class="address-wrapper" id="menu-container" data-menu>
             <div class="header-box">
               <nav class="navigation">
                 <ul class="listnav list">
@@ -76,6 +76,7 @@
                 </li>
               </ul>
             </div>
+          </div>
           </header>
       </div>
       </div>
@@ -196,8 +197,9 @@
       </section>
 
       <!-- Our team -->
+      
       <section class="our-team-bg container-for-all">
-        <div class="container our-team-container">
+      <div class="container our-team-container">
           <h2 class="our-team">Наша команда</h2>
           <ul class="list list-us">
             <li class="frame">
@@ -401,8 +403,10 @@
               </ul>
             </li>
           </ul>
-        </div>
-      </section>
+          </div>
+          </section>
+        
+      
       <!-- Our clients -->
       <div class="container">
       <section class="clients">
@@ -458,11 +462,9 @@
     </main> 
     <!--Footer-Сontacts-->
     <div class="footer">
-     <footer class="container  ">
+     <footer class="container">
       <section class="footer-section footer-padding">
-       
         <div class="help">
-          
           <div class="footer-first">
             <div class="tablet-adres">
             <h2 hidden>Контакты</h2>
@@ -550,8 +552,6 @@
             </ul>
           </div>
         </div>
-
-
           <div class="footer-form">
             <div class="big-form">
               <div>
@@ -559,25 +559,24 @@
             <div class="form-input-btn">
               </div>
             <input  type="email" name="user-e" 
-             class="footer-input"placeholder="E-mail" >
+             class="footer-input" placeholder="E-mail" >
             </div>
           <div class="btn-icon">
-          <button type="submit" class="footer-btn">Подписаться
-         <svg width="24px" height="24px" class="icon-send">
+          <button type="submit" class="footer-btn"
+          >Подписаться<svg width="24px" height="24px" class="icon-send">
            <use href="./images/sprite.svg#icon-send"></use>
          </svg>
+          </button>
         </div>
         </div>
-        </div>
-        
-        
+      </div>
       </section> 
     </footer>
     </div>
 
 
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg width="11px" height="11px">
@@ -615,7 +614,7 @@
           </label>
           
             <h3 class="textarea-title">Комментарий</h3>
-          <textarea name="user-message" placeholder="Введите текст" class="modal-form-message" id="" cols="30" rows="10"></textarea>
+          <textarea name="user-message" placeholder="Введите текст" class="modal-form-message"  cols="30" rows="10"></textarea>
           
           <input type="checkbox" class="modal-form-policy visually-hidden" 
           
@@ -628,7 +627,7 @@
         </form>
         </div>
       </div>
-   </div> -->
+   </div>
   <script src="./js/modal.js"></script>
   <script src="./js/menu.js"></script>
   </body>

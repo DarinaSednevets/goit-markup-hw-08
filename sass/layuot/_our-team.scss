@@ -1,9 +1,17 @@
 // Можно попробовать использовать это @media screen and(min-width: 320px) and (max-width: 767px)
 
+.our-team-bg {
+  background-color: #f5f4fa;
+}
+
+.our-team-container {
+  background-color: #f5f4fa;
+}
+
 @media screen and (max-width: 767px) {
-  .our-team-bg {
-    background-color: #f5f4fa;
-  }
+  // .our-team-bg {
+  //   background-color: #f5f4fa;
+  // }
   .our-team-container {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -89,13 +97,12 @@
   }
 }
 @media screen and (min-width: 768px) and(max-width: 1199px) {
-  .our-team-bg {
-    background-color: #f5f4fa;
-  }
+  // .our-team-bg {
+  //   background-color: #f5f4fa;
+  // }
   .our-team-container {
     padding-top: 60px;
     padding-bottom: 60px;
-    // display: flex;
   }
   .list-us {
     display: flex;
@@ -113,6 +120,7 @@
   }
 
   .frame {
+    // margin: 0 auto;
     width: 354px;
     height: 536px;
     background: #ffffff;
@@ -186,9 +194,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .our-team-bg {
-    background-color: #f5f4fa;
-  }
+  // .our-team-bg {
+  //   background-color: #f5f4fa;
+  // }
   .our-team-container {
     padding-top: 94px;
     padding-bottom: 94px;
