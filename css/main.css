@@ -70,6 +70,10 @@ button:focus {
   margin: 0 auto;
 }
 
+.container-hero {
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -897,7 +901,7 @@ button:focus {
 }
 
 .our-team-bg {
-  margin: 0 auto;
+  width: 100%;
   background-color: #f5f4fa;
 }
 
@@ -912,6 +916,7 @@ button:focus {
 }
 
 .frame {
+  padding-bottom: 24px;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -952,22 +957,30 @@ button:focus {
   }
 }
 
+.team__img {
+  width: 100%;
+}
+
+.frame {
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 480px) {
-  .team-img {
+  .team__img {
     width: 450px;
     height: 460px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .team-img {
+  .team__img {
     width: 354px;
     height: 374px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .team-img {
+  .team__img {
     width: 270px;
     height: 260px;
   }
@@ -981,6 +994,10 @@ button:focus {
   .frame:not(:last-child) {
     margin-bottom: 30px;
   }
+}
+
+.list-us {
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
@@ -1009,6 +1026,8 @@ button:focus {
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .clients-title {
@@ -1024,6 +1043,7 @@ button:focus {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .clients-list-item {
