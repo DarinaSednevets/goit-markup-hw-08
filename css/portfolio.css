@@ -81,17 +81,6 @@ button:focus {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .container {
-    width: 480px;
-    position: relative;
-  }
-  .container-hero {
-    text-align: center;
-    width: 480px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -885,11 +874,43 @@ button:focus {
     display: flex;
     align-items: center;
   }
+  .header-link {
+    font-style: 400;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+  .header-link {
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-link:hover, .header-link:focus {
+    color: #2196f3;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .outline {
     border-bottom: 1px solid #ececec;
+  }
+  .header-link {
+    font-style: 400;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+  .header-link {
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-link:hover, .header-link:focus {
+    color: #2196f3;
   }
   .header .container {
     display: flex;

@@ -58,6 +58,15 @@
   margin: 0 auto;
   background-color: #f5f4fa;
 }
+.our-team {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.179;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 30px;
+}
 
 .frame {
   background-color: #ffffff;
@@ -137,5 +146,8 @@
   .list-us {
     display: flex;
     justify-content: space-between;
+  }
+  .our-team {
+    margin-bottom: 50px;
   }
 }
