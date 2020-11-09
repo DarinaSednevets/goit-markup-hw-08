@@ -71,9 +71,6 @@ button:focus {
 }
 
 @media screen and (max-width: 767px) {
-  .container-header-phone {
-    position: relative;
-  }
   .container {
     width: 480px;
     position: relative;
@@ -81,8 +78,6 @@ button:focus {
   .container-hero {
     text-align: center;
     width: 480px;
-    margin: 0 auto;
-    padding: 0;
   }
 }
 
@@ -93,7 +88,6 @@ button:focus {
   .container-hero {
     text-align: center;
     width: 768px;
-    margin: 0 auto;
   }
 }
 
@@ -106,7 +100,6 @@ button:focus {
     text-align: center;
     width: 100%;
     max-width: 1600px;
-    margin: 0 auto;
   }
 }
 
@@ -567,12 +560,6 @@ button:focus {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .menu-btn {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .menu-btn {
     position: absolute;
@@ -602,31 +589,6 @@ button:focus {
 }
 
 @media screen and (max-width: 767px) {
-  .address-wrapper {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    text-align: center;
-    background-color: #fff;
-  }
-  .address-wrapper.is-open {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .nav-address-wrapper {
-    display: flex;
-    align-items: center;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .logo-div {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -647,6 +609,19 @@ button:focus {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-address-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .outline {
     border-bottom: 1px solid #ececec;
@@ -661,7 +636,6 @@ button:focus {
     align-items: center;
   }
   .listnav {
-    display: flex;
     display: flex;
     font-weight: 500;
     font-size: 14px;

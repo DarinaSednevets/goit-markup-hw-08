@@ -1,11 +1,3 @@
-.container-hero {
-  background: aqua;
-}
-
-.hero-text {
-  padding: 118px 0;
-}
-
 .main-title {
   font-weight: 900;
   font-size: 26px;
@@ -22,10 +14,10 @@
   letter-spacing: 0.06em;
   color: #ffffff;
   padding: 10px 32px;
-  min-width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
+  // min-width: 200px;
+  // height: 50px;
+  // left: 700px;
+  // top: 430px;
   background: rgba(33, 150, 243, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
@@ -35,80 +27,83 @@
   border: 1px solid #212121;
 }
 
-@media screen and (min-width: 1200px) {
-  .hero-text {
-    padding: 200px 0;
+.hero-img {
+  max-width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  padding: 118px 0px;
+  text-align: center;
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero-m.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    height: 400px;
+    background-size: 480px 400px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-m.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-m@2x.jpg);
+    }
   }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 400px;
+    background-size: 768px 400px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero-t.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-t@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0px;
+    background-size: 1600px 600px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/hero.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/hero-d@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .main-title {
     font-size: 44px;
     line-height: 1.363;
   }
 }
-// .hero-img {
-//   text-align: center;
-//   background-color: #c4c4c4;
-//   background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url(../images/hero/hero.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: auto auto;
-// }
-
-// .hero-img {
-//   text-align: center;
-//   background-color: #c4c4c4;
-//   background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url(../images/hero/hero.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: auto auto;
-// }
-
-// .hero-img {
-//   text-align: center;
-//   background-color: #c4c4c4;
-//   background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url(../images/hero/hero.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: auto auto;
-// }
-
-// .hero-img {
-//   background-color: #c4c4c4;
-//   text-align: center;
-//   background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url(../images/hero/hero.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: auto auto;
-// }
-
-// .hero-title .btn {
-//   font-weight: 700;
-//   font-size: 16px;
-//   line-height: 1.875;
-//   letter-spacing: 0.06em;
-//   color: #ffffff;
-//   padding: 10px 32px;
-//   min-width: 200px;
-//   height: 50px;
-//   left: 700px;
-//   top: 430px;
-//   background: rgba(33, 150, 243, 1);
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//   /* border: 1px solid transparent; */
-//   border-radius: 4px;
-// }

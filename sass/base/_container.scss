@@ -2,24 +2,8 @@
   padding: 0 15px;
   margin: 0 auto;
 }
-// @media screen and (min-width: 480px) {
-//   .container-header-phone {
-//     position: relative;
-//   }
-//   .container {
-//     width: 480px;
-//   }
-//   .container-hero {
-//     text-align: center;
-//     width: 480px;
-//     margin: 0 auto;
-//     padding: 0;
-//   }
-// }
+
 @media screen and (max-width: 767px) {
-  .container-header-phone {
-    position: relative;
-  }
   .container {
     width: 480px;
     position: relative;
@@ -27,8 +11,6 @@
   .container-hero {
     text-align: center;
     width: 480px;
-    margin: 0 auto;
-    padding: 0;
   }
 }
 
@@ -39,7 +21,6 @@
   .container-hero {
     text-align: center;
     width: 768px;
-    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -51,6 +32,5 @@
     text-align: center;
     width: 100%;
     max-width: 1600px;
-    margin: 0 auto;
   }
 }
