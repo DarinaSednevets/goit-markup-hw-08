@@ -70,6 +70,17 @@ button:focus {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    position: relative;
+  }
+  .container-hero {
+    text-align: center;
+    width: 480px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .container {
     width: 480px;
@@ -595,14 +606,25 @@ button:focus {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .advantages-icon-bg {
+    display: flex;
+    background-color: #f5f4fa;
+    width: 450px;
+    height: 120px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .advantages-icon-bg {
     display: flex;
     background-color: #f5f4fa;
-    width: 100%;
+    width: 450px;
     height: 120px;
-    left: 515px;
-    top: 774px;
     border-radius: 4px;
     align-items: center;
     justify-content: center;
@@ -642,8 +664,6 @@ button:focus {
     background-color: #f5f4fa;
     width: 354px;
     height: 120px;
-    left: 515px;
-    top: 774px;
     border-radius: 4px;
     align-items: center;
     justify-content: center;
@@ -692,8 +712,6 @@ button:focus {
     background-color: #f5f4fa;
     width: 270px;
     height: 120px;
-    left: 515px;
-    top: 774px;
     border-radius: 4px;
     align-items: center;
     justify-content: center;
@@ -839,61 +857,6 @@ button:focus {
   background-color: #f5f4fa;
 }
 
-.frame .picture {
-  width: 100%;
-}
-
-.team-social-link {
-  display: flex;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  transition-property: all;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-social-link:hover {
-  background-color: #2196f3;
-}
-
-.team-social-link:not(:last-child) {
-  margin-right: 10px;
-}
-
-.team-social-link > svg {
-  align-self: center;
-  fill: #afb1b8;
-  transition-property: all;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-social-link:hover > svg {
-  fill: #ffffff;
-}
-
-.our-team {
-  margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.179;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-.position {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.188;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #757575;
-  margin-bottom: 16px;
-}
-
 .frame {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
@@ -903,18 +866,21 @@ button:focus {
 @media screen and (min-width: 480px) {
   .frame {
     width: 450px;
+    height: 622px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .frame {
     width: 354px;
+    height: 536px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .frame {
     width: 270px;
+    height: 428px;
   }
 }
 
@@ -932,15 +898,29 @@ button:focus {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .team-img {
     width: 450px;
     height: 460px;
+    margin: 0 auto;
   }
-  .frame {
-    width: 450px;
-    height: 622px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-img {
+    width: 354px;
+    height: 374px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-img {
+    width: 270px;
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .list-us {
     display: flex;
     flex-wrap: wrap;
@@ -951,14 +931,6 @@ button:focus {
 }
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
-  .team-img {
-    width: 354px;
-    height: 374px;
-  }
-  .frame {
-    width: 354px;
-    height: 536px;
-  }
   .list-us {
     display: flex;
     flex-wrap: wrap;
@@ -972,14 +944,6 @@ button:focus {
 }
 
 @media screen and (min-width: 1200px) {
-  .team-img {
-    width: 270px;
-    height: 260px;
-  }
-  .frame {
-    width: 270px;
-    height: 428px;
-  }
   .list-us {
     display: flex;
     justify-content: space-between;
@@ -1506,7 +1470,7 @@ button:focus {
     color: #ffffff;
   }
   .footer-first {
-    margin-right: 70px;
+    margin-right: 66px;
   }
   .footer-social-links > p {
     margin-bottom: 20px;

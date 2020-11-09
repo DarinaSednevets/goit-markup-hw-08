@@ -70,6 +70,17 @@ button:focus {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    position: relative;
+  }
+  .container-hero {
+    text-align: center;
+    width: 480px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .container {
     width: 480px;
@@ -1620,7 +1631,7 @@ button:focus {
     color: #ffffff;
   }
   .footer-first {
-    margin-right: 70px;
+    margin-right: 66px;
   }
   .footer-social-links > p {
     margin-bottom: 20px;
