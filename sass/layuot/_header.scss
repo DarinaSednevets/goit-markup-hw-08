@@ -13,20 +13,22 @@
     background-color: transparent;
     cursor: pointer;
   }
-  .menu-btn:focus > svg {
-    fill: rgb(33, 150, 243);
-  }
+
   .menu-btn .icon-close-menu {
     display: none;
   }
   .menu-btn.is-open .icon-close-menu {
     display: block;
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
   }
   .menu-btn.is-open .icon-menu {
     display: none;
   }
   .icon-menu:active .menu-container {
     display: block;
+  }
+  .menu-btn:active > svg {
+    fill: #2196f3;
   }
 }
 @media screen and (max-width: 767px) {
