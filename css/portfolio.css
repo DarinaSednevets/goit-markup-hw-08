@@ -560,6 +560,10 @@ button:focus {
   }
 }
 
+.outline {
+  border-bottom: 1px solid #ececec;
+}
+
 @media screen and (max-width: 767px) {
   .menu-btn {
     position: absolute;
@@ -589,12 +593,125 @@ button:focus {
 }
 
 @media screen and (max-width: 767px) {
+  .address-wrapper {
+    display: none;
+    position: absolute;
+    top: 101%;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: #fff;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+  .address-wrapper.is-open {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .listnav {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    position: relative;
+    margin-bottom: 60px;
+  }
+  .header-link {
+    font-style: 400;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+  .header-link:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .navigation-list-item {
+    font-style: 400;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+  .navigation-list-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .header-link {
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-link:hover, .header-link:focus {
+    color: #2196f3;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contacts-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .header-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-contacts > svg {
+    margin-right: 10px;
+    display: flex;
+    fill: #757575;
+  }
+  .header-contacts {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-contacts:hover, .header-contacts:focus, .header-contacts:active {
+    color: #2196f3;
+  }
+  .header-contacts > svg {
+    fill: #757575;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-contacts:hover > svg {
+    fill: #2196f3;
+  }
+  .header .tel,
+  .header .mail {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .logo-div {
     padding-top: 16px;
     padding-bottom: 16px;
-  }
-  .header-box {
-    display: none;
   }
   .logo {
     font-family: Raleway;
@@ -607,6 +724,45 @@ button:focus {
   .logo-web {
     color: #2196f3;
   }
+  .navigation-list-item {
+    font-style: 400;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+  .header-contacts > svg {
+    margin-right: 10px;
+    fill: #757575;
+  }
+  .header-contacts {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.667;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-contacts:hover, .header-contacts:focus, .header-contacts:active {
+    color: #2196f3;
+  }
+  .header-contacts > svg {
+    fill: #757575;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-contacts:hover > svg {
+    fill: #2196f3;
+  }
+  .header .tel,
+  .header .mail {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -616,16 +772,13 @@ button:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .nav-address-wrapper {
+  .address-wrapper {
     display: flex;
     align-items: center;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .outline {
-    border-bottom: 1px solid #ececec;
-  }
   .logo-div {
     padding-top: 26px;
     padding-bottom: 26px;
