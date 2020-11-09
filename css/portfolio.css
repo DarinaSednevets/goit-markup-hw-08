@@ -68,6 +68,7 @@ button:focus {
 .container {
   padding: 0 15px;
   margin: 0 auto;
+  position: relative;
 }
 
 .container-hero {
@@ -1304,10 +1305,6 @@ button:focus {
 .footer {
   background: #2f303a;
   width: 100%;
-}
-
-.footer .container {
-  background: #2f303a;
 }
 
 @media screen and (max-width: 767px) {
