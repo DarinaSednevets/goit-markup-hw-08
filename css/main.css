@@ -141,22 +141,23 @@ button:focus {
   }
 }
 
-.address-wrapper {
-  display: none;
-  position: absolute;
-  left: 0;
-  z-index: 10;
-  width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  text-align: center;
-  background-color: #fff;
-  background: #ffffff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-}
-
-.address-wrapper.is-open {
-  display: block;
+@media screen and (max-width: 480px) {
+  .address-wrapper {
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: #fff;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+  .address-wrapper.is-open {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1670,13 +1671,6 @@ button:focus {
   .icon-send {
     display: inline-block;
     margin-left: 10px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .modal {
-    max-width: 450px;
-    height: 609px;
   }
 }
 
